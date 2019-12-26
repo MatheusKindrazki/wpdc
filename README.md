@@ -30,8 +30,8 @@ docker-compose up
 
 This creates two new folders next to your `docker-compose.yml` file.
 
-* `wp-data` – used to store and restore database dumps
-* `./` – the location of your WordPress application
+- `wp-data` – used to store and restore database dumps
+- `./` – the location of your WordPress application
 
 The containers are now built and running. You should be able to access the WordPress installation with the configured IP in the browser address. By default it is `http://127.0.0.1`.
 
@@ -71,8 +71,8 @@ docker-compose down -v
 
 Copy the `docker-compose.yml` file into a new directory. In the directory you create two folders:
 
-* `wp-data` – here you add the database dump
-* `./` – here you copy your existing WordPress code
+- `wp-data` – here you add the database dump
+- `./` – here you copy your existing WordPress code
 
 You can now use the `up` command:
 
@@ -96,6 +96,10 @@ sh .export.sh
 ### Developing a Theme
 
 Finishing the initialization of container, a clean theme clone maintained by: - [@Welltrojan](https://github.com/welltrojan)
+
+```
+sh .theme.sh
+```
 
 ### Developing a Plugin
 

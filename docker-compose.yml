@@ -43,7 +43,6 @@ services:
     ports:
       - ${APP_IP}:${APP_PORT}:80
     restart: always
-    command: bash -c "cd wp-content/themes && git clone https://github.com/MatheusKindrazki/easy-wordpress-theme.git ${APP_NAME} && cd ${APP_NAME} && rm -rf .git mu-plugins LICENSE && mv theme/* ./ && rm -rf theme"
     environment:  
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: ${WP_USER}
@@ -51,7 +50,7 @@ services:
       WORDPRESS_DB_NAME: ${WP_DB}
     working_dir: /var/www/html/${APP_NAME}
     volumes:
+      - ./:/var/www/html/${APP_NAME}
       - ./config/php.conf.ini:/usr/local/etc/php/conf.d/conf.ini
-      - ./${APP_NAME}:/var/www/html/${APP_NAME}
 volumes:
   db_data: {}
