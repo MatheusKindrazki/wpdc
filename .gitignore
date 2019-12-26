@@ -19,6 +19,7 @@ wp-content/themes/twentyn*
 !docker-compose.*
 !.export.sh
 !.config.sh
+!.env.example
 !README.md
 
 # General CodeKit files to ignore
