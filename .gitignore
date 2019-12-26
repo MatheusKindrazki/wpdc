@@ -1,0 +1,33 @@
+#default ignore
+.env
+.logs/*
+wp-data
+.htaccess
+db_data
+wp-content/languages/*.json
+wp-content/upgrade
+
+# Ignore everything in the root except the "wp-content" directory.
+/*
+!wp-content/
+!wp-config.php
+wp-content/themes/twentyn*
+
+#default not ignore
+!.gitignore
+!docker-compose.*
+!.export.sh
+!.config.sh
+!README.md
+
+# General CodeKit files to ignore
+config.codekit
+config.codekit3
+/min
+
+*/codekit-config.json
+.codekit-cache
+
+# Config Prepros files to ignore
+prepros.cfg
+prepros-6.config
