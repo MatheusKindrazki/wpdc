@@ -14,6 +14,7 @@ wp-content/upgrade
 wp-content/themes/twentyn*
 
 #default not ignore
+!config
 !.gitignore
 !docker-compose.*
 !.export.sh
