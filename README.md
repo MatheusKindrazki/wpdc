@@ -1,4 +1,4 @@
-WordPress Docker Compose
+#WordPress Docker Compose
 
 Easy WordPress development with Docker and Docker Compose.
 
@@ -15,6 +15,17 @@ Make sure you have the latest versions of **Docker** and **Docker Compose** inst
 Clone this repository or copy the files from this repository into a new folder. In the **docker-compose.yml** file you may change the IP address (in case you run multiple containers) or the database from MySQL to MariaDB.
 
 Make sure to [add your user to the `docker` group](https://docs.docker.com/install/linux/linux-postinstall/#manage-docker-as-a-non-root-user) when using Linux.
+
+## Download
+
+You can clone the project or simply download it using:
+
+```
+wget --no-check-certificate --content-disposition https://github.com/MatheusKindrazki/wpdc/archive/v.0.0.1.zip
+# --no-check-cerftificate was necessary for me to have wget not puke about https
+curl -LJO https://github.com/MatheusKindrazki/wpdc/archive/v.0.0.1.zip
+
+```
 
 ## Configuration
 
