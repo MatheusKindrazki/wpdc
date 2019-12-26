@@ -21,10 +21,9 @@ Make sure to [add your user to the `docker` group](https://docs.docker.com/insta
 You can clone the project or simply download it using:
 
 ```
-wget --no-check-certificate --content-disposition https://github.com/MatheusKindrazki/wpdc/archive/v.0.0.1.zip
+wget --no-check-certificate --content-disposition https://github.com/MatheusKindrazki/wpdc/archive/v.0.0.1.zip -O wpdc.zip
 # --no-check-cerftificate was necessary for me to have wget not puke about https
-curl -LJO https://github.com/MatheusKindrazki/wpdc/archive/v.0.0.1.zip
-
+curl -LJO https://github.com/MatheusKindrazki/wpdc/archive/v.0.0.1.zip -o 'wpdc.zip'
 ```
 
 ## Configuration
